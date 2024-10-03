@@ -1,1 +1,4 @@
 esto es el 1 doc
+
+git config --global user.email "eacifue@gmail.com"
+git config --global user.name "Eric" 
