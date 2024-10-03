@@ -1,0 +1,33 @@
+services:
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver
+    ports:
+      - "1433:1433"
+    environment:
+      SA_PASSWORD: "12345678"  # Contraseña para el usuario 'sa'
+      ACCEPT_EULA: "Y"
+    volumes:
+      - sql_data:/var/opt/mssql
+    networks:
+      - mssql_network
+
+  api:
+    image: apisanatest
+    container_name: api_container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+    environment:
+      - ConnectionStrings__DefaultConnection: "Server=sqlserver;Database=YourDatabase;User Id=sa;Password=12345678;"
+
+volumes:
+  sql_data:
+
+networks:
+  mssql_network:
+    driver: bridge

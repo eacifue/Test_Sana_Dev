@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "BES3EC8t14wR+MyjS0dKLhengdwKcbUYt9YFVPczF68=",
+  "Source": "apiSAnaTest",
+  "BasePath": "_content/apiSAnaTest",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
