@@ -1,0 +1,79 @@
+/* Estilo base para resetear márgenes y paddings, y configuración de la fuente */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Estilo para el cuerpo de la página */
+body {
+  background-color: #f0f0f0; /* Fondo suave y relajante */
+}
+
+/* Estilo para los enlaces */
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #555;
+  text-decoration: none;
+}
+
+/* Estilos específicos para la aplicación */
+.App {
+  text-align: center;
+}
+
+/* Estilo para el encabezado de la aplicación */
+.App-header {
+  background: linear-gradient(to right, #b19cd9, #6bb5ff); /* Gradiente suave desde tonos morados a azules */
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(12px + 2vmin);
+  color: #fff; /* Texto blanco para mayor contraste */
+}
+
+/* Estilo para la barra de navegación mejorada */
+.App-nav {
+  display: flex;
+  justify-content: space-evenly;
+  background: linear-gradient(to right, #b19cd9, #6bb5ff); /* Gradiente suave desde tonos morados a azules */
+  padding: 10px 0;
+  transition: background 0.5s; /* Transición suave para el fondo */
+}
+
+/* Estilo para los elementos de la barra de navegación */
+.App-nav li {
+  padding: 6px 30px;
+}
+
+/* Estilo para los enlaces de la barra de navegación */
+.App-nav li a {
+  text-decoration: none;
+  color: #fff; /* Texto blanco para enlaces del menú */
+}
+
+/* Estilo para el elemento activo de la barra de navegación */
+.App-nav li.active {
+  background: #8d8d8d; /* Un tono más oscuro de gris para el elemento activo */
+}
+
+/* Estilo al pasar el mouse por encima de los elementos de la barra de navegación */
+.App-nav li:hover {
+  background: #8d8d8d; /* Un tono más oscuro de gris al pasar el mouse por encima */
+  cursor: pointer;
+  transition: background 0.5s; /* Transición suave para el fondo al pasar el mouse por encima */
+}
+
+/* Estilo para el logo */
+.App-logo {
+  position: absolute;
+  height: 50px;
+  left: 10px;
+  pointer-events: none;
+  animation: App-logo-spin 2s infinite; /* Aplicar la animación al logo */
+}
+
